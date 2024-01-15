@@ -69,7 +69,7 @@ output_layer = Dense(units=1, activation="sigmoid")(dense_layer)
 
 # 7. Create the model
 print("\nStep 7 of 10: Creating and Compiling model...")
-model = Model(inputs=input_layer, outputs=output_layer, name="Applyer")
+model = Model(inputs=input_layer, outputs=output_layer, name="Maven.AI")
 
 # 8. Compile the model with updated libraries
 model.compile(optimizer="adam", loss="binary_crossentropy", metrics=["accuracy"])
@@ -91,5 +91,5 @@ print("\nStep 10 of 10: Saving Tokenizers to .json and Model to .keras")
 with open("saved_models/tokenizer.json", "w", encoding="utf-8") as file:
     file.write(tokenizer.to_json())
 
-model.save("saved_models/applyer_ai_model.keras")
+model.save("saved_models/maven_ai_model.keras")
 print("\nSteps completed")
