@@ -24,7 +24,7 @@ with open("saved_models/tokenizer.json", "r", encoding="utf-8") as file:
     tokenizer = tokenizer_from_json(file.read())
 # 2. Load the trained model
 print("\nLoading trained model...")
-model = load_model("saved_models/applyer_ai_model.keras")
+model = load_model("saved_models/maven_ai_model.keras")
 clear_terminal()
 
 
@@ -48,5 +48,5 @@ def predict_decision(input_data: dict):
 
 
 # Example usage
-input_titles = data_file_to_dict("test_data/data.txt")
+input_titles = data_file_to_dict(f'test_data/{os.getenv("TEST_DATA")}')
 predict_decision(input_titles)

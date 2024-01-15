@@ -1,7 +1,7 @@
 {
-  "name": "applyerai_playwright_frontend",
+  "name": "mavenai_playwright_frontend",
   "version": "0.0.1",
-  "description": "The frontend scripting for Applyer AI",
+  "description": "The frontend scripting for Maven.AI",
   "main": "interactor.spec.js",
   "author": "Andrew McDonald",
   "private": false,
