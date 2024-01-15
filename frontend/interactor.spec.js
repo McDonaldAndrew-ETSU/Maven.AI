@@ -4,7 +4,7 @@ import { expect, test } from '@playwright/test';
 
 dotenv.config({ path: '../.env' });
 
-test('Applyer.AI Interactor', async ({ page }) => {
+test('Maven.AI Interactor', async ({ page }) => {
 	await page.goto(process.env.URL);
 
 	let incrementor = 1;
@@ -16,7 +16,7 @@ test('Applyer.AI Interactor', async ({ page }) => {
 		for (const locator of await page.locator(process.env.LOCATOR_ID).all()) {
 			const text = await locator.innerText();
 
-			await fs.appendFile('../test_data/data.txt', `${text}\n`);
+			await fs.appendFile(`../test_data/${process.env.TEST_DATA}`, `${text}\n`);
 		}
 
 		try {
