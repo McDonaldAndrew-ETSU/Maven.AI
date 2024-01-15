@@ -1,13 +1,17 @@
 frontend/node_modules
 frontend/test-results
 
-log_results/*
+!logs/.gitkeep
 
-saved_models/*
+!saved_models/.gitkeep
 
-test_data/*
+test_data/Data.txt
+!test_data/.gitkeep
 
-training_data/*
+training_data/MavenTrainingData.json
+!training_data/.gitkeep
+
+util/__pycache__
 
 venv
 
