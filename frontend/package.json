@@ -1,0 +1,16 @@
+{
+  "name": "applyerai_playwright_frontend",
+  "version": "0.0.1",
+  "description": "The frontend scripting for Applyer AI",
+  "main": "interactor.spec.js",
+  "author": "Andrew McDonald",
+  "private": false,
+  "type": "module",
+  "dependencies": {
+    "@playwright/test": "^1.40.1",
+    "dotenv": "^16.3.1"
+  },
+  "scripts": {
+    "start": "npx playwright test interactor.spec.js --headed"
+  }
+}
